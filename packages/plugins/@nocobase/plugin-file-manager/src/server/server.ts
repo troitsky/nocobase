@@ -334,15 +334,28 @@ export class PluginFileManagerServer extends Plugin {
   }
 
   async getFileURL(file: AttachmentModel, preview = false) {
+    // Condition 1: No storageId
     if (!file.storageId) {
-      return encodeURL(file.url);
+      const urlToReturn = file.url;
+      // FIX: Returns file.url directly, without calling encodeURL
+      return urlToReturn;
     }
     const storage = this.storagesCache.get(file.storageId);
+    // Condition 2: Storage not found in cache
     if (!storage) {
-      return encodeURL(file.url);
+      const urlToReturn = file.url;
+      // FIX: Returns file.url directly, without calling encodeURL
+      return urlToReturn;
     }
     const storageType = this.storageTypes.get(storage.type);
-    return new storageType(storage).getFileURL(file, preview ? storage.options.thumbnailRule : '');
+    // FIX: Explicit check for missing storage type
+    if (!storageType) {
+      return undefined; // Returns undefined safely
+    }
+    // ... rest of the logic ...
+    const specificStorage = new storageType(storage);
+    const finalUrl = await specificStorage.getFileURL(file, preview ? storage.options.thumbnailRule : '');
+    return finalUrl;
   }
 }
 
