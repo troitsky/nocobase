@@ -8410,6 +8410,13 @@
   resolved "https://registry.npmmirror.com/@types/picomatch/-/picomatch-2.3.3.tgz#be60498568c19e989e43fb39aa84be1ed3655e92"
   integrity sha512-Yll76ZHikRFCyz/pffKGjrCwe/le2CDwOP5F210KQo27kpRE46U2rDnzikNlVn6/ezH3Mhn46bJMTfeVTtcYMg==
 
+"@types/pizzip@^3.0.5":
+  version "3.0.5"
+  resolved "https://registry.npmmirror.com/@types/pizzip/-/pizzip-3.0.5.tgz#fa02a18c7a85cac455d4494d5966032d692bae4e"
+  integrity sha512-XnXA0VgZZy/caVTkENhNCGeE6U/TH7MWe2SnqPi137BTcxWlN/s/ijohQm1KngR2XL5TfzWcY3QfJlhgsyBZfg==
+  dependencies:
+    "@types/node" "*"
+
 "@types/prop-types@*":
   version "15.7.11"
   resolved "https://registry.npmmirror.com/@types/prop-types/-/prop-types-15.7.11.tgz#2596fb352ee96a1379c657734d4b913a613ad563"
@@ -9346,6 +9353,11 @@
     estree-walker "^3.0.3"
     loupe "^2.3.7"
     pretty-format "^29.7.0"
+
+"@xmldom/xmldom@^0.9.8":
+  version "0.9.8"
+  resolved "https://registry.npmmirror.com/@xmldom/xmldom/-/xmldom-0.9.8.tgz#1471e82bdff9e8f20ee8bbe60d4ffa8a516e78d8"
+  integrity sha512-p96FSY54r+WJ50FIOsCOjyj/wavs8921hG5+kVMmZgKcvIKxMXHTrjNJvRgWa/zuX3B6t2lijLNFaOyuxUH+2A==
 
 "@yarnpkg/lockfile@^1.1.0":
   version "1.1.0"
@@ -10497,7 +10509,7 @@ axios@^1.7.0:
     form-data "^4.0.0"
     proxy-from-env "^1.1.0"
 
-axios@^1.7.8:
+axios@^1.7.8, axios@~1.7.2:
   version "1.7.9"
   resolved "https://registry.npmmirror.com/axios/-/axios-1.7.9.tgz#d7d071380c132a24accda1b2cfc1535b79ec650a"
   integrity sha512-LhLcE7Hbiryz8oMDdDptSrWowmB4Bl6RCt6sIJKpRB4XtVf0iEgewX3au/pJqm+Py1kCASkb/FFKjxQaLtxJvw==
@@ -14018,6 +14030,13 @@ doctrine@^3.0.0:
   integrity sha512-yS+Q5i3hBf7GBkd4KG8a7eBNNWNGLTaEwwYWUijIYM7zrlYDM0BFXHjjPWlWZ1Rg7UaddZeIDmi9jF3HmqiQ2w==
   dependencies:
     esutils "^2.0.2"
+
+docxtemplater@^3.47.1:
+  version "3.61.0"
+  resolved "https://registry.npmmirror.com/docxtemplater/-/docxtemplater-3.61.0.tgz#311f7274501042c52804022f4b34fc91e1d9a3e8"
+  integrity sha512-9oYedik2UohT7l9JVR4uK0HnI5u8EtN5SsyiDUWRZkt2xhdm32cVxnas71RzV9EUA4QfxHk5bHSBh+oyLF6Msw==
+  dependencies:
+    "@xmldom/xmldom" "^0.9.8"
 
 dom-accessibility-api@^0.5.9:
   version "0.5.16"
@@ -22896,6 +22915,11 @@ pako@^0.2.5:
   resolved "https://registry.npmmirror.com/pako/-/pako-0.2.9.tgz#f3f7522f4ef782348da8161bad9ecfd51bf83a75"
   integrity sha512-NUcwaKxUxWrZLpDG+z/xZaCgQITkA/Dv4V/T6bw7VON6l1Xz/VnrBqrYjZQ12TamKHzITTfOEIYUj48y2KXImA==
 
+pako@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.npmmirror.com/pako/-/pako-2.1.0.tgz#266cc37f98c7d883545d11335c00fbd4062c9a86"
+  integrity sha512-w+eufiZ1WuJYgPXbV/PO3NCMEc3xqylkKHzp8bxp1uW4qaSNQUkwmLLEc3kKsfz8lpV1F8Ht3U1Cm+9Srog2ug==
+
 pako@~1.0.2, pako@~1.0.5:
   version "1.0.11"
   resolved "https://registry.npmmirror.com/pako/-/pako-1.0.11.tgz#6c9599d340d54dfd3946380252a35705a6b992bf"
@@ -23465,6 +23489,13 @@ pirates@^4.0.1, pirates@^4.0.4:
   version "4.0.6"
   resolved "https://registry.npmmirror.com/pirates/-/pirates-4.0.6.tgz#3018ae32ecfcff6c29ba2267cbf21166ac1f36b9"
   integrity sha512-saLsH7WeYYPiD25LDuLRRY/i+6HaPYr6G1OUlN39otzkSTxKnubR9RTxS3/Kk50s1g2JTgFwWQDQyplC5/SHZg==
+
+pizzip@^3.1.6:
+  version "3.1.8"
+  resolved "https://registry.npmmirror.com/pizzip/-/pizzip-3.1.8.tgz#2028944e4845cb08fb79412939fc41d842659858"
+  integrity sha512-Nynadaz6/o1cmXDQGKqmTnbeaY10BGNc1PPOZYJMfLcjWfVJQ1ARngpVO+BrrRl/WUNIj0V9uJNrP72mkfsY5A==
+  dependencies:
+    pako "^2.1.0"
 
 pkg-dir@^4.2.0:
   version "4.2.0"
